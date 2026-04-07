@@ -8,10 +8,10 @@ public class UseCase5BookingRequestQueue {
         BookingQueue bookingQueue = new BookingQueue();
 
         // Simulating guest booking requests (arrival order matters)
-        Reservation r1 = new Reservation("Priyan", "Single Room");
-        Reservation r2 = new Reservation("Arun", "Double Room");
-        Reservation r3 = new Reservation("Meena", "Suite Room");
-        Reservation r4 = new Reservation("Karthik", "Single Room");
+        Reservation r1 = new Reservation("SI-101", "Priyan", "Single");
+        Reservation r2 = new Reservation("DO-202", "Arun", "Double");
+        Reservation r3 = new Reservation("SU-301", "meena", "Single");
+        Reservation r4 = new Reservation("DO-203", "mala", "Double");
 
         // Add requests to queue (FIFO order)
         bookingQueue.addRequest(r1);
