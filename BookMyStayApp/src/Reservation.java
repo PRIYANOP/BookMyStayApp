@@ -1,9 +1,13 @@
 
 package src;
 
-class Reservation {
+import java.io.Serializable;
 
-    private String reservationId;   // ✅ ADD THIS
+class Reservation implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private String reservationId;
     private String guestName;
     private String roomType;
 
@@ -13,7 +17,7 @@ class Reservation {
         this.roomType = roomType;
     }
 
-    public String getReservationId() {   // ✅ ADD THIS
+    public String getReservationId() {
         return reservationId;
     }
 
